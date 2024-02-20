@@ -4,13 +4,13 @@
   "macros": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   "layers": [
     [
-      "KC_TAB",
+      "KC_ESC",
       "KC_Q",
       "KC_W",
       "KC_E",
       "KC_R",
       "KC_T",
-      "KC_GESC",
+      "KC_TAB",
       "KC_A",
       "KC_S",
       "KC_D",
@@ -54,7 +54,7 @@
       "FN_MO13"
     ],
     [
-      "KC_TRNS",
+      "KC_GRV",
       "KC_1",
       "KC_2",
       "KC_3",
@@ -101,10 +101,10 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS"
+      "KC_NO"
     ],
     [
-      "KC_TRNS",
+      "KC_GRV",
       "KC_F1",
       "KC_F2",
       "KC_F3",
@@ -127,7 +127,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_NO",
       "KC_INS",
       "KC_F10",
       "KC_F9",
@@ -177,7 +177,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS",
+      "KC_NO",
       "KC_TRNS",
       "KC_MPRV",
       "KC_NO",
@@ -201,7 +201,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_TRNS"
+      "KC_NO"
     ]
   ],
   "encoders": []
