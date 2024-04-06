@@ -27,7 +27,7 @@
       "KC_NO",
       "KC_LCTL",
       "KC_LALT",
-      "FN_MO23",
+      "FN_MO13",
       "KC_BSPC",
       "KC_P",
       "KC_O",
@@ -51,7 +51,7 @@
       "KC_NO",
       "KC_RGUI",
       "KC_SPC",
-      "FN_MO13"
+      "FN_MO23"
     ],
     [
       "KC_GRV",
@@ -91,9 +91,9 @@
       "KC_EQL",
       "KC_MINS",
       "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
-      "KC_TRNS",
+      "S(KC_2)",
+      "S(KC_RBRC)",
+      "S(KC_LBRC)",
       "KC_NO",
       "KC_NO",
       "KC_NO",
@@ -101,7 +101,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_NO"
+      "KC_TRNS"
     ],
     [
       "KC_GRV",
@@ -127,7 +127,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_NO",
+      "KC_TRNS",
       "KC_INS",
       "KC_F10",
       "KC_F9",
@@ -177,7 +177,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_NO",
+      "KC_TRNS",
       "KC_TRNS",
       "KC_MPRV",
       "KC_NO",
@@ -201,7 +201,7 @@
       "KC_NO",
       "KC_TRNS",
       "KC_TRNS",
-      "KC_NO"
+      "KC_TRNS"
     ]
   ],
   "encoders": []
