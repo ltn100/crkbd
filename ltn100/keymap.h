@@ -1,7 +1,8 @@
 #pragma once
 
 enum layers {
-    _QWERTY,
-    _LOWER,
-    _RAISE,
+    DEFAULT,
+    RAISE1,
+    RAISE2,
+    FN,
 };
