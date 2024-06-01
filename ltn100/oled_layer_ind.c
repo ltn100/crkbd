@@ -159,12 +159,33 @@ void render_layer_state(void) {
         0x20, 0x97, 0x98, 0x99, 0x20,
         0x20, 0xb7, 0xb8, 0xb9, 0x20,
         0x20, 0xd7, 0xd8, 0xd9, 0x20, 0};
-    if(layer_state_is(FN)) {
+    static const char PROGMEM other_layer[] = {
+        0x20, 0x9d, 0x9e, 0x9f, 0x20,
+        0x20, 0xbd, 0xbe, 0xbf, 0x20,
+        0x20, 0xdd, 0xde, 0xdf, 0x20, 0};
+    // uint8_t default_layer_state = eeconfig_read_default_layer();
+    if (
+        layer_state_is(LAYER3)
+        || layer_state_is(LAYER4)
+        || layer_state_is(LAYER5)
+        || layer_state_is(LAYER6)
+        || layer_state_is(LAYER7)
+    ) {
+        oled_write_P(other_layer, false);
+    } else if(layer_state_is(FN)) {
         oled_write_P(second_layer, false);
-    } else if(layer_state_is(RAISE1) || layer_state_is(RAISE2)) {
+    } else if(layer_state_is(NUM)) {
         oled_write_P(first_layer, false);
     } else {
-        oled_write_P(default_layer, false);
+        if (biton32(default_layer_state) > FN) {
+            oled_write_P(other_layer, false);
+        } else if (biton32(default_layer_state) == FN) {
+            oled_write_P(second_layer, false);
+        } else if (biton32(default_layer_state) == NUM) {
+            oled_write_P(first_layer, false);
+        } else {
+            oled_write_P(default_layer, false);
+        }
     }
 }
 
